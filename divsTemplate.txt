@@ -1,0 +1,10 @@
+
+Comentario
+<div class="comment">
+    <a class="user-name" href="">raiy.c</a>
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit
+        amet
+        consectetur adipisicing elit Et vero, odit hic repellendus ipsam animi
+        </p>
+</div>

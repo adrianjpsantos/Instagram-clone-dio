@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  background: linear-gradient(0deg,white,#f8f8f8);
+}
+
+.website {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+.left-side {
+  padding: 30px 0;
+}
+
+.left-side img {
+  width: 450px;
+  position: absolute;
+}
+
+.slide{
+  margin-top: 26px;
+  margin-left:152px;
+}
+
+.slide img{
+  width: 241px;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5 ease-in-out;
+}
+
+.slide img.fade {
+  opacity:0;
+}
+
+.right-side {
+  padding: 40px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.box {
+  border: 1px solid rgb(212, 212, 212);
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 0 60px;
+  margin-bottom: 20px;
+}
+
+.box > img {
+  width: 250px;
+  align-self: center;
+  padding: 30px;
+}
+
+.input-text {
+  background-color: whitesmoke;
+  outline: none;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+
+.login-facebook {
+  color: steelblue;
+  font-weight: 700;
+}
+
+.esqueceu-senha{
+  color: grey;
+  font-size: .9rem;
+}
+
+.box > button {
+  background-color:cornflowerblue;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.box > button:hover{
+  background-color:rgb(61, 120, 230);
+}
+
+.box > p {
+  padding: 15px;
+}
+
+.box>p>a{
+    font-weight: 700;
+    color: cornflowerblue;
+}
+
+.ou{
+  color: grey;
+}
+footer {
+  height: 15vh;
+  padding: 20px;
+  text-align: center;
+  color: grey;
+}
+
+footer a{
+  font-size: .9rem;
+  color: grey;
+}
+
+.footer-link::after{
+  content: '\00B7';
+  margin: 0 .25rem 0 .25rem;
+}
+
+.copyright{
+  color: grey;
+}
+
+.copyright a{
+  font-size: 0.8rem;
+  color:slateblue;
+}
+
+@media(max-width:900px){
+  .invisible{
+    display: none;
+  }
+
+  .website{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .right-side{
+    padding: 0;
+    justify-content: center;
+  }
+
+  html,body{
+    padding: 0;
+  }
+
+  footer{
+    padding: 10px;
+  }
+
+}
